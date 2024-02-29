@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+#chat-container {
+    width: 95%; /* Set to cover 95% of the width */
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the content */
+}
+
+/* Add this style to your existing CSS */
+/* Add this style to your existing CSS */
+/* .copy-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+} */
+
+
+
+textarea#logs {
+    width: 200px;
+    height: 150px;
+    resize: none;
+    overflow-y: scroll;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Add the following styles to your existing CSS */
+/* Add this style to your existing CSS */
+/* .message-container {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse; /* Reverse column order for proper stacking */
+} */
+
+/* Add this style to your existing CSS */
+.copy-button {
+    top: 0;
+    right: 0;
+    background-color: #f4d03f; 
+    /* Yellow background color */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+.copy-button:hover {
+    background-color: #f7ca18; /* Darker yellow color on hover */
+}
+
+
+
+#messages-container {
+    height: 70vh; /* Set height to 50% of the viewport height */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+#messages {
+    display: block;
+    word-wrap: break-word;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.message {
+    display: block;  /* Make textarea a block-level element */
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 100%; /* Take the entire width of the container */
+    overflow: hidden;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+
+
+.message.left {
+    background-color: #ddd;
+    color: #000;
+}
+
+.message.right {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+
+
+
+#messageInput {
+    width: 70%;
+    padding: 8px;
+    margin-right: 5px;
+}
+
+button {
+    padding: 8px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
